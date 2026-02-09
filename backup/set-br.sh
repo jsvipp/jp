@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup"
+akbarvpn="raw.githubusercontent.com/jsvipp/scvip/main/backup"
 
 apt install rclone -y
 printf "q\n" | rclone config
@@ -43,12 +43,12 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup/strt.sh"
-wget -O limitspeed "https://raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup/limitspeed.sh"
-wget -O menu-backup "https://raw.githubusercontent.com/Jos-vpn-store/instalasi/main/backup/menu-backup.sh"
+wget -O autobackup "https://raw.githubusercontent.com/jsvipp/scvip/main/backup/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/jsvipp/scvip/main/backup/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/jsvipp/scvip/main/backup/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/jsvipp/scvip/main/backup/strt.sh"
+wget -O limitspeed "https://raw.githubusercontent.com/jsvipp/scvip/main/backup/limitspeed.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/jsvipp/scvip/main/backup/menu-backup.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x restore
